@@ -20,13 +20,19 @@ function generateLetter(serie)
 
 //fonction pour l'affichage des lettres	
 function affichagechaine(lettre) {
-	lettreHTML = "<span>"+lettre+"</span>";
+	var lettreHTML = "<span>"+lettre+"</span>";
     document.querySelector('#caracteres').innerHTML += lettreHTML;
 }
 
-// gestion du clic sur les boutons voyelles / consonnes
+function resetChaine() {
+    var lettreHTML =null;
+    document.querySelector('#caracteres').innerHTML = lettreHTML;
+}
+
+// gestion du clic sur les boutons voyelles / consonnes / reset
 var btnConsonne = document.getElementById('consonne');
 var btnVoyelle = document.getElementById('voyelle');
+var btnReset = document.getElementById('reset');
 
 
 function generateVoyelle() 	
@@ -48,6 +54,7 @@ function generateConsonne()
 
 btnConsonne.addEventListener('click', function(){generateConsonne();});
 btnVoyelle.addEventListener('click', function(){generateVoyelle();});
+btnReset.addEventListener('click', function(){resetChaine();});
 
 //------------------Gestion des presets
 /*switch case basé sur l'id du bouton pour nombre de boucles ?*/
