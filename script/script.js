@@ -2,7 +2,7 @@
 //preparation
 var voyelles = ["A", "E", "I", "O", "U", "Y"];
 var consonnes = ["B", "C", "D", "F", "G", "H", "J", "K", "L", "M", "N", "P", "Q", "R", "S", "T", "V", "W", "X", "Z"];
-nbrLettre = 0;
+var nbrLettre = 0;
 
 // on gere le nombre de lettre et son affichage
 function affichageLettres(nombre)
@@ -32,6 +32,7 @@ function resetChaine()
 	var lettreHTML = null;
 	document.querySelector('#caracteres').innerHTML = lettreHTML;
 	affichageLettres('0');
+	nbrLettre = 0;
 	}
 
 // gestion du clic sur les boutons voyelles / consonnes / reset
