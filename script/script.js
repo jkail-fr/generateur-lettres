@@ -44,7 +44,7 @@ function generateVoyelle()
 	{
 	var resultat = generateLetter(voyelles);
 	affichagechaine(resultat);
-	var nbrLettre = nbrLettre + 1;
+	nbrLettre = nbrLettre + 1;
 	affichageLettres(nbrLettre);
 	}
 
@@ -52,7 +52,7 @@ function generateVoyelle()
 function generateConsonne()
 	{
 	var resultat = generateLetter(consonnes);
-	var nbrLettre = nbrLettre + 1;
+	nbrLettre = nbrLettre + 1;
 	affichagechaine(resultat);
 	affichageLettres(nbrLettre);
 	}
