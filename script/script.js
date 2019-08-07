@@ -58,18 +58,13 @@ function generateConsonne()
 	affichageLettres(nbrLettre);
 	}
 
-btnConsonne.addEventListener('click', function ()
-{
-generateConsonne();
-});
-btnVoyelle.addEventListener('click', function ()
-{
-generateVoyelle();
-});
-btnReset.addEventListener('click', function ()
-{
-resetChaine();
-});
+btnConsonne.addEventListener('click', function (){generateConsonne();});
+btnVoyelle.addEventListener('click', function (){generateVoyelle();});
+btnReset.addEventListener('click', function (){resetChaine();});
+// eventlistener pour tablettes :
+btnConsonne.addEventListener('touchstart', function (){generateConsonne();});
+btnVoyelle.addEventListener('touchstart', function (){generateVoyelle();});
+btnReset.addEventListener('touchstart', function (){resetChaine();});
 
 //------------------Gestion des presets
 /*switch case basé sur l'id du bouton pour nombre de boucles ?*/
